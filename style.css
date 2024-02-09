@@ -18,3 +18,61 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.login-form > span{
+    background-color: #F0EDFF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 14px;
+    margin: 10px 0;
+}
+.login-form > span > input{
+    background-color: #F0EDFF;
+    border: none;
+    width: 300px;
+    height: 50px;
+    color: #1C1C1C;
+    font-weight: 600;
+    margin-left: 10px;
+    outline: none;
+}
+.login-form > span > input::placeholder{
+    color: #1C1C1C;
+    font-weight: 600;
+}
+.login-form > button{
+    width: 124px;
+    height: 54px;
+    border-radius: 16px;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    background: rgb(145,129,244);
+    background: linear-gradient(323deg, rgba(145,129,244,1) 0%, rgba(80,56,237,1) 99%);
+}
+.other-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.other-account > span{
+    /* text-align: center; */
+    display: table;
+    width: 100%;
+}
+.other-account > span > h2,
+.other-account > span:before,
+.other-account > span:after {
+    display: table-cell;
+}
+.other-account > span::before,
+.other-account > span::after{
+    background: url(http://dummyimage.com/2x/fff) repeat-x center;
+    width: 50%;
+    content: '';
+}
+.other-account > span > h2{
+    white-space: nowrap;
+    padding: 0 9px;
+}
