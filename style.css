@@ -9,8 +9,10 @@ body{
 }
 .container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
+}
+.l-side{
+    width: 50%;
 }
 .login-form{
     display: flex;
@@ -55,9 +57,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px 0;
 }
 .other-account > span{
-    /* text-align: center; */
     display: table;
     width: 100%;
 }
@@ -75,4 +77,37 @@ body{
 .other-account > span > h2{
     white-space: nowrap;
     padding: 0 9px;
+}
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.account > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1c1c1c38;
+    width: 357.25px;
+    height: 54px;
+    margin: 10px 0;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.account > div:hover{
+    border: 1px solid rgba(80,56,237,1);
+}
+.account > div > img{
+    width: 30px;
+    margin-right: 10px;
+}
+.account > div > h4{
+    margin: 0 5px;
+}
+.r-side{
+    width: 50%;
+    background-image: url("./assets/backpattern.png");
+    background: linear-gradient(323deg, rgba(145,129,244,1) 0%, rgba(80,56,237,1) 99%);
 }
