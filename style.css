@@ -6,6 +6,7 @@
 body{
     font-family: 'Inter';
     font-size: 22px;
+    user-select: none;
 }
 .container{
     display: flex;
@@ -13,6 +14,10 @@ body{
 }
 .l-side{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .login-form{
     display: flex;
@@ -35,21 +40,23 @@ body{
     width: 300px;
     height: 50px;
     color: #1C1C1C;
-    font-weight: 600;
+    font-weight: 500;
     margin-left: 10px;
     outline: none;
 }
 .login-form > span > input::placeholder{
-    color: #1C1C1C;
-    font-weight: 600;
+    color: #1c1c1c49;
+    font-weight: 500;
 }
 .login-form > button{
     width: 124px;
     height: 54px;
+    margin: 40px 0;
     border-radius: 16px;
     font-weight: 800;
     color: #fff;
     border: none;
+    cursor: pointer;
     background: rgb(145,129,244);
     background: linear-gradient(323deg, rgba(145,129,244,1) 0%, rgba(80,56,237,1) 99%);
 }
@@ -57,26 +64,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
-}
-.other-account > span{
-    display: table;
-    width: 100%;
-}
-.other-account > span > h2,
-.other-account > span:before,
-.other-account > span:after {
-    display: table-cell;
-}
-.other-account > span::before,
-.other-account > span::after{
-    background: url(http://dummyimage.com/2x/fff) repeat-x center;
-    width: 50%;
-    content: '';
-}
-.other-account > span > h2{
-    white-space: nowrap;
-    padding: 0 9px;
+    margin: 20px 0;
+    color: #ccc;
 }
 .account{
     display: flex;
@@ -107,7 +96,57 @@ body{
     margin: 0 5px;
 }
 .r-side{
+    display: block;
     width: 50%;
-    background-image: url("./assets/backpattern.png");
     background: linear-gradient(323deg, rgba(145,129,244,1) 0%, rgba(80,56,237,1) 99%);
+}
+.pattern{
+    background-image: url("./assets/backpattern.png");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.box{
+    width: 412px;
+    height: 524px;
+    border-radius: 46px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    background-color: rgba(255, 255, 255, 0.274);
+    backdrop-filter: blur(13.6px);
+    z-index: 2;
+    overflow: hidden;
+}
+.box > h2{
+    color: #fff;
+    width: 260px;
+    padding: 20px 40px;
+    line-height: 50px;
+    font-weight: 800;
+}
+.box > img{
+    position: absolute;
+    bottom: 0;
+    right: -85px;
+    width: 700px;
+}
+.layer{
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background-color: #ffffff38;
+    z-index: 1;
+}
+@media screen and (max-width: 860px) and (max-height: 1024px) {
+    .r-side{
+        display: none;
+    }
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
 }
