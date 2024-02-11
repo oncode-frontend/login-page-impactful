@@ -25,6 +25,9 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.login-form > h1{
+    margin: 30px 0;
+}
 .login-form > span{
     background-color: #F0EDFF;
     border-radius: 16px;
