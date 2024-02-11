@@ -161,4 +161,14 @@ body{
     bottom: 100px;
     left: -40px;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.light > img{
+    width: 50px;
+    transition: .2s;
+}
+.light > img:hover{
+    width: 70px;
 }
