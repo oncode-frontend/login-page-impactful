@@ -60,6 +60,9 @@ body{
     background: rgb(145,129,244);
     background: linear-gradient(323deg, rgba(145,129,244,1) 0%, rgba(80,56,237,1) 99%);
 }
+.login-form > button:hover{
+    background: linear-gradient(323deg, rgba(80,56,237,1) 0%, rgba(145,129,244,1) 99%);
+}
 .other-account{
     display: flex;
     justify-content: center;
