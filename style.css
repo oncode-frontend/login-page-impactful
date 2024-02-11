@@ -2,9 +2,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Inter;
 }
 body{
-    font-family: 'Inter';
     font-size: 22px;
     user-select: none;
 }
@@ -53,7 +53,7 @@ body{
     height: 54px;
     margin: 40px 0;
     border-radius: 16px;
-    font-weight: 800;
+    font-weight: 600;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -124,7 +124,7 @@ body{
     width: 260px;
     padding: 20px 40px;
     line-height: 50px;
-    font-weight: 800;
+    font-weight: 600;
 }
 .box > img{
     position: absolute;
